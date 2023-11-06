@@ -1,5 +1,9 @@
 <script setup lang="ts">
+<<<<<<< HEAD
 import  {ref}  from "vue";
+=======
+import { ref } from "vue";
+>>>>>>> b00283b (Update)
 import { invoke } from "@tauri-apps/api/tauri";
 
 const greetMsg = ref("");

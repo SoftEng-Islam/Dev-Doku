@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "dev-doku",
+=======
+  "name": "tauri-test",
+>>>>>>> b00283b (Update)
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +14,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@tauri-apps/api": "^1.5.0",
     "vue": "^3.3.4"
   },
@@ -21,5 +26,16 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.4",
     "vue-tsc": "^1.8.5"
+=======
+    "vue": "^3.3.4",
+    "@tauri-apps/api": "^1.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.4",
+    "vue-tsc": "^1.8.5",
+    "@tauri-apps/cli": "^1.5.0"
+>>>>>>> b00283b (Update)
   }
 }
