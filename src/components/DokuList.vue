@@ -9,5 +9,5 @@ div(class="w-52 h-full absolute bg-[var(--cD3)]")
 			li(class="relative w-full h-7 rounded-md bg-[var(--cD1)] cursor-pointer ")
 			li(class="relative w-full h-7 rounded-md bg-[var(--cD1)] cursor-pointer ")
 
-	div(class="w-5 h-5 bg-slate-500 absolute right-0")
+	button(type="button" id="closeOrResize" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--cD3)] absolute top-1/2 right-[-1rem] translate-y-[-50%]")
 </template>
