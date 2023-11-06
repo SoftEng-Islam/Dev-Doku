@@ -1,13 +1,22 @@
 {
   "build": {
+<<<<<<< HEAD
     "beforeDevCommand": "pnpm dev",
     "beforeBuildCommand": "pnpm build",
+=======
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+>>>>>>> b00283b (Update)
     "devPath": "http://localhost:1420",
     "distDir": "../dist",
     "withGlobalTauri": false
   },
   "package": {
+<<<<<<< HEAD
     "productName": "dev-doku",
+=======
+    "productName": "tauri-test",
+>>>>>>> b00283b (Update)
     "version": "0.0.0"
   },
   "tauri": {
@@ -37,7 +46,11 @@
       {
         "fullscreen": false,
         "resizable": true,
+<<<<<<< HEAD
         "title": "dev-doku",
+=======
+        "title": "tauri-test",
+>>>>>>> b00283b (Update)
         "width": 800,
         "height": 600
       }

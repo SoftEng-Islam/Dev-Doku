@@ -1,5 +1,9 @@
 [package]
+<<<<<<< HEAD
 name = "dev-doku"
+=======
+name = "tauri-test"
+>>>>>>> b00283b (Update)
 version = "0.0.0"
 description = "A Tauri App"
 authors = ["you"]
