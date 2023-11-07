@@ -13,4 +13,5 @@ header(class="h-14 flex items-center px-4 bg-[var(--cD1)]")
 		li(class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-blue-500")
 		li(class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-green-500")
 		li(class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-yellow-500")
+	//- Settings
 </template>
