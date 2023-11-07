@@ -8,6 +8,7 @@
 	--cD3: #3D2E2E;
 	--cD4: #707070;
 	--HeaderHeight: 3.5rem;
+	--DokuListsHeight: calc(100vh - var(--HeaderHeight))
 }
 body {
 	background-color: var(--cD2);
