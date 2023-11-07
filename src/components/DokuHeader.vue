@@ -2,7 +2,7 @@
 </script>
 <template lang="pug">
 //- Our Header
-header(class="h-14 flex items-center px-4 bg-[var(--cD1)]")
+header(class="h-[var(--HeaderHeight)] flex items-center px-4 bg-[var(--cD1)]")
 	//- App Name or The Logo
 	h1(class="text-white") Dev-Doku
 	//- Change App Colors and Theme

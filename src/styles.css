@@ -7,6 +7,7 @@
 	--cD2: #261E1E;
 	--cD3: #3D2E2E;
 	--cD4: #707070;
+	--HeaderHeight: 3.5rem;
 }
 body {
 	background-color: var(--cD2);
