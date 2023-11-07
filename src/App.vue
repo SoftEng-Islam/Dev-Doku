@@ -4,10 +4,13 @@
 import DokuHeader from "./components/DokuHeader.vue";
 // import Greet from "./components/Greet.vue";
 import DokuList from "./components/DokuList.vue";
+import DokuPages from "./components/DokuPages.vue";
 </script>
 
 <template lang="pug">
 <doku-header/>
-<doku-list/>
+div(class="w-full h-full left-0 flex")
+	<doku-list/>
+	<doku-pages/>
 //- <Greet/>
 </template>
