@@ -1,6 +1,7 @@
 <script setup lang="ts">
 </script>
 <template lang="pug">
+//- All Docs List
 div(class="w-52 h-full absolute left-0 bg-[var(--cD3)] z-10")
 	div(class="w-full flex items-center justify-center")
 		input(type="text", placeholder="Search..." value="" , class="h-8 px-2 rounded-md bg-[var(--cD1)] text-white" )
