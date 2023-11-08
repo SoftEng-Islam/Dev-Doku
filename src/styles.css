@@ -3,16 +3,16 @@
 	img {
 		@apply rounded-md;
 	}
-	input[type='text']:focus {
+	input[type="text"]:focus {
 		@apply ring-0;
 	}
-	input[type='password']:focus {
+	input[type="password"]:focus {
 		@apply ring-0;
 	}
 	input {
 		@apply outline-none border-none;
 	}
-	div[contenteditable='true']:focus-visible {
+	div[contenteditable="true"]:focus-visible {
 		@apply outline-none;
 	}
 }
@@ -20,85 +20,83 @@
 @tailwind utilities;
 @tailwind variants;
 
-
 @font-face {
 	font-family: JetBrains;
 	src: url(./assets/fonts/JetBrainsMono-Regular.ttf);
 }
 
-
 :root {
+	--th_gra1: hsl(220, 81%, 8%);
+	--th_gra2: hsl(220, 50%, 10%);
+	--th_gra3: hsl(220, 60%, 12%);
+	--th_gra4: hsl(220, 33%, 17%);
 
-	--th_gra1:  hsl(220, 81%, 8%) ;
-	--th_gra2:  hsl(220, 50%, 10%);
-	--th_gra3:  hsl(220, 60%, 12%);
-	--th_gra4:  hsl(220, 33%, 17%);
-
-	--th_pur1: hsl(271, 81%, 8%) ;
+	--th_pur1: hsl(271, 81%, 8%);
 	--th_pur2: hsl(271, 50%, 10%);
 	--th_pur3: hsl(271, 60%, 12%);
 	--th_pur4: hsl(271, 33%, 17%);
 
-	--th_pin1: hsl(330, 81%, 8%) ;
+	--th_pin1: hsl(330, 81%, 8%);
 	--th_pin2: hsl(330, 50%, 10%);
 	--th_pin3: hsl(330, 60%, 12%);
 	--th_pin4: hsl(330, 33%, 17%);
 
-	--th_blu1:  hsl(217, 81%, 8%) ;
-	--th_blu2:  hsl(217, 50%, 10%);
-	--th_blu3:  hsl(217, 60%, 12%);
-	--th_blu4:  hsl(217, 33%, 17%);
+	--th_blu1: hsl(217, 81%, 8%);
+	--th_blu2: hsl(217, 50%, 10%);
+	--th_blu3: hsl(217, 60%, 12%);
+	--th_blu4: hsl(217, 33%, 17%);
 
-	--th_gre1:  hsl(142, 81%, 8%) ;
-	--th_gre2:  hsl(142, 50%, 10%);
-	--th_gre3:  hsl(142, 60%, 12%);
-	--th_gre4:  hsl(142, 33%, 17%);
+	--th_gre1: hsl(142, 81%, 8%);
+	--th_gre2: hsl(142, 50%, 10%);
+	--th_gre3: hsl(142, 60%, 12%);
+	--th_gre4: hsl(142, 33%, 17%);
 
-	--th_yel1:  hsl(45, 81%, 8%) ;
-	--th_yel2:  hsl(45, 50%, 10%);
-	--th_yel3:  hsl(45, 60%, 12%);
-	--th_yel4:  hsl(45, 33%, 25%);
+	--th_yel1: hsl(45, 81%, 8%);
+	--th_yel2: hsl(45, 50%, 10%);
+	--th_yel3: hsl(45, 60%, 12%);
+	--th_yel4: hsl(45, 33%, 25%);
+
+	/* Light Theme */
+	--Lth_gra1: hsl(220, 20%, 40%);
+	--Lth_gra2: hsl(220, 20%, 50%);
+	--Lth_gra3: hsl(220, 20%, 60%);
+	--Lth_gra4: hsl(220, 20%, 70%);
+
+	--Lth_pur1: hsl(271, 20%, 40%);
+	--Lth_pur2: hsl(271, 20%, 50%);
+	--Lth_pur3: hsl(271, 20%, 60%);
+	--Lth_pur4: hsl(271, 20%, 70%);
+
+	--Lth_pin1: hsl(330, 20%, 40%);
+	--Lth_pin2: hsl(330, 20%, 50%);
+	--Lth_pin3: hsl(330, 20%, 60%);
+	--Lth_pin4: hsl(330, 20%, 70%);
+
+	--Lth_blu1: hsl(217, 20%, 40%);
+	--Lth_blu2: hsl(217, 20%, 50%);
+	--Lth_blu3: hsl(217, 20%, 60%);
+	--Lth_blu4: hsl(217, 20%, 70%);
+
+	--Lth_gre1: hsl(142, 20%, 40%);
+	--Lth_gre2: hsl(142, 20%, 50%);
+	--Lth_gre3: hsl(142, 20%, 60%);
+	--Lth_gre4: hsl(142, 20%, 70%);
+
+	--Lth_yel1: hsl(45, 20%, 40%);
+	--Lth_yel2: hsl(45, 20%, 50%);
+	--Lth_yel3: hsl(45, 20%, 60%);
+	--Lth_yel4: hsl(45, 20%, 70%);
+
+	--LTheme1: var(--Lth_gra1);
+	--LTheme2: var(--Lth_gra2);
+	--LTheme3: var(--Lth_gra3);
+	--LTheme4: var(--Lth_gra4);
 
 	--Theme1: var(--th_gra1);
 	--Theme2: var(--th_gra2);
 	--Theme3: var(--th_gra3);
 	--Theme4: var(--th_gra4);
 
-	/* Light Theme */
-	--Lth_gra1:  hsl(220, 10%, 40%) ;
-	--Lth_gra2:  hsl(220, 20%, 50%);
-	--Lth_gra3:  hsl(220, 30%, 60%);
-	--Lth_gra4:  hsl(220, 40%, 70%);
-
-	--Lth_pur1: hsl(271, 10%, 40%) ;
-	--Lth_pur2: hsl(271, 20%, 50%);
-	--Lth_pur3: hsl(271, 30%, 60%);
-	--Lth_pur4: hsl(271, 40%, 70%);
-
-	--Lth_pin1: hsl(330, 10%, 40%) ;
-	--Lth_pin2: hsl(330, 20%, 50%);
-	--Lth_pin3: hsl(330, 30%, 60%);
-	--Lth_pin4: hsl(330, 40%, 70%);
-
-	--Lth_blu1:  hsl(217, 10%, 40%) ;
-	--Lth_blu2:  hsl(217, 20%, 50%);
-	--Lth_blu3:  hsl(217, 30%, 60%);
-	--Lth_blu4:  hsl(217, 40%, 70%);
-
-	--Lth_gre1:  hsl(142, 10%, 40%) ;
-	--Lth_gre2:  hsl(142, 20%, 50%);
-	--Lth_gre3:  hsl(142, 30%, 60%);
-	--Lth_gre4:  hsl(142, 40%, 70%);
-
-	--Lth_yel1:  hsl(45, 10%, 40%) ;
-	--Lth_yel2:  hsl(45, 20%, 50%);
-	--Lth_yel3:  hsl(45, 30%, 60%);
-	--Lth_yel4:  hsl(45, 40%, 70%);
-
-	--LTheme1: var(--Lth_gra1);
-	--LTheme2: var(--Lth_gra2);
-	--LTheme3: var(--Lth_gra3);
-	--LTheme4: var(--Lth_gra4);
 
 	--gra: hsl(220, 9%, 46%);
 	--pur: hsl(271, 91%, 65%);
@@ -107,28 +105,26 @@
 	--gre: hsl(142, 71%, 45%);
 	--yel: hsl(45, 93%, 47%);
 
-	--bor_gra: rgb(3 7 18 );
+	--bor_gra: rgb(3 7 18);
 	--bor_pur: rgb(59 7 100);
-	--bor_pin: rgb(80 7 36 );
+	--bor_pin: rgb(80 7 36);
 	--bor_blu: rgb(23 37 84);
-	--bor_gre: rgb(5 46 22 );
-	--bor_yel: rgb(66 32 6 );
+	--bor_gre: rgb(5 46 22);
+	--bor_yel: rgb(66 32 6);
 
 	--HeaderHeight: 3.5rem;
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight));
 
 	--borderFavColor: var(--bor_gra);
+	--LborderFavColor: var(--gra);
 	--favColor: var(--gra);
-
 }
 
 body {
 	font-family: JetBrains;
-	@apply
-		flex items-center justify-center
-		border-4 border-solid border-[var(--borderFavColor)]
+	@apply flex items-center justify-center
+		border-4 border-solid border-[var(--LborderFavColor)] dark:border-[var(--borderFavColor)]
 		bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]
 		h-screen w-screen
-		overflow-hidden
-	;
+		overflow-hidden;
 }
