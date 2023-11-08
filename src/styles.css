@@ -10,6 +10,8 @@
 	--HeaderHeight: 3.5rem;
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight))
 }
-body {
-	background-color: var(--cD2);
+html,body {
+	overflow: hidden;
+	background: transparent !important;
+	border-radius: 15px;
 }

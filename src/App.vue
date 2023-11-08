@@ -9,7 +9,7 @@ import DokuPages from "./components/DokuPages.vue";
 
 <template lang="pug">
 <doku-header/>
-div(class="w-full h-full left-0 flex")
+div(class="w-full left-0")
 	<doku-list/>
 	<doku-pages/>
 //- <Greet/>
