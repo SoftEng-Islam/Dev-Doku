@@ -10,8 +10,13 @@
 	--HeaderHeight: 3.5rem;
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight))
 }
-html,body {
-	overflow: hidden;
-	background: transparent !important;
-	border-radius: 15px;
+
+
+body{
+	@apply
+		flex items-center justify-center
+		border-4 border-solid border-pink-950
+		h-screen w-screen
+		overflow-hidden
+	;
 }

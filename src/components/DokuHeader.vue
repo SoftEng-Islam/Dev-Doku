@@ -3,8 +3,9 @@ import { appWindow } from '@tauri-apps/api/window'
 function minimize(): void {
 	appWindow.minimize();
 }
-function maximize(): void  {
-	appWindow.toggleMaximize();
+
+async function maximize()  {
+	await appWindow.toggleMaximize();
 }
 function close(): void {
 	appWindow.close();
@@ -12,7 +13,7 @@ function close(): void {
 </script>
 <template lang="pug">
 //- Our Header
-header(class="h-[var(--HeaderHeight)] flex items-center px-4 bg-[var(--cD1)]" data-tauri-drag-region style="-webkit-app-region: drag;  user-select: none;")
+header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex items-center px-4 bg-[var(--cD1)]" data-tauri-drag-region style="user-select: none;")
 	//- App Name or The Logo
 	h1(class="text-white") Dev-Doku
 	//- Change App Colors and Theme
