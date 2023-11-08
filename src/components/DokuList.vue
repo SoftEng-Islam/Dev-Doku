@@ -9,14 +9,14 @@
 </script>
 <template lang="pug">
 //- All Docs List
-div(class="absolute w-52 h-[var(--DokuListsHeight)] p-4 bg-[var(--Theme3)] duration-100" :style="DokuListClosed ? 'left: -13rem' : 'left: 0'")
-	div(class="z-10")
+div(class="absolute duration-100 h-[var(--DokuListsHeight)] bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]" :style="DokuListClosed ? 'left: -13rem' : 'left: 0'")
+	div(class="h-full w-52 p-4 z-10")
 		div()
-			input(type="text", placeholder="Search..." value="" , class="w-full h-8 px-2 rounded-md bg-[var(--Theme1)] text-white" )
+			input(type="text", placeholder="Search..." value="" , class="w-full h-8 px-2 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] text-black dark:text-white placeholder:text-black dark:placeholder:text-white" )
 		div(class="")
 			ul(class="w-full flex p-5 flex-col justify-center gap-y-4")
-				li(class="relative w-full h-7 rounded-md bg-[var(--Theme1)] cursor-pointer ")
-				li(class="relative w-full h-7 rounded-md bg-[var(--Theme1)] cursor-pointer ")
-		button(type="button" @click="close" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--Theme3)] absolute z-20 top-1/2 right-[-1rem] translate-y-[-50%]")
+				li(class="relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer ")
+				li(class="relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer ")
+		button(type="button" @click="close" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] absolute z-20 top-1/2 right-[-1rem] translate-y-[-50%]")
 	<doku-pages/>
 </template>
