@@ -27,26 +27,31 @@
 
 :root {
 	/* Dark Theme */
-	--th_gra1: hsl(220, 30%, 05%);
-	--th_gra2: hsl(220, 30%, 10%);
-	--th_gra3: hsl(220, 30%, 15%);
-	--th_gra4: hsl(220, 30%, 20%);
+	--th_gra1: hsl(225, 10%, 05%);
+	--th_gra2: hsl(220, 10%, 10%);
+	--th_gra3: hsl(220, 10%, 15%);
+	--th_gra4: hsl(220, 10%, 20%);
+
 	--th_pur1: hsl(271, 30%, 05%);
 	--th_pur2: hsl(271, 30%, 10%);
 	--th_pur3: hsl(271, 30%, 15%);
 	--th_pur4: hsl(271, 30%, 20%);
+
 	--th_pin1: hsl(330, 30%, 05%);
 	--th_pin2: hsl(330, 30%, 10%);
 	--th_pin3: hsl(330, 30%, 15%);
 	--th_pin4: hsl(330, 30%, 20%);
-	--th_blu1: hsl(217, 30%, 05%);
+
+	--th_blu1: hsl(219, 30%, 05%);
 	--th_blu2: hsl(217, 30%, 10%);
 	--th_blu3: hsl(217, 30%, 15%);
 	--th_blu4: hsl(217, 30%, 20%);
+
 	--th_gre1: hsl(142, 30%, 05%);
 	--th_gre2: hsl(142, 30%, 10%);
 	--th_gre3: hsl(142, 30%, 15%);
 	--th_gre4: hsl(142, 30%, 20%);
+
 	--th_yel1: hsl(45,  30%, 05%);
 	--th_yel2: hsl(45,  30%, 10%);
 	--th_yel3: hsl(45,  30%, 15%);
@@ -59,30 +64,35 @@
 
 
 	/* Light Theme */
-	--Lth_gra1: hsl(220, 20%, 40%);
-	--Lth_gra2: hsl(220, 20%, 50%);
-	--Lth_gra3: hsl(220, 20%, 60%);
-	--Lth_gra4: hsl(220, 20%, 70%);
-	--Lth_pur1: hsl(271, 20%, 40%);
-	--Lth_pur2: hsl(271, 20%, 50%);
-	--Lth_pur3: hsl(271, 20%, 60%);
-	--Lth_pur4: hsl(271, 20%, 70%);
-	--Lth_pin1: hsl(330, 20%, 40%);
-	--Lth_pin2: hsl(330, 20%, 50%);
-	--Lth_pin3: hsl(330, 20%, 60%);
-	--Lth_pin4: hsl(330, 20%, 70%);
-	--Lth_blu1: hsl(217, 20%, 40%);
-	--Lth_blu2: hsl(217, 20%, 50%);
-	--Lth_blu3: hsl(217, 20%, 60%);
-	--Lth_blu4: hsl(217, 20%, 70%);
-	--Lth_gre1: hsl(142, 20%, 40%);
-	--Lth_gre2: hsl(142, 20%, 50%);
-	--Lth_gre3: hsl(142, 20%, 60%);
-	--Lth_gre4: hsl(142, 20%, 70%);
-	--Lth_yel1: hsl(45, 20%, 40%);
-	--Lth_yel2: hsl(45, 20%, 50%);
-	--Lth_yel3: hsl(45, 20%, 60%);
-	--Lth_yel4: hsl(45, 20%, 70%);
+	--Lth_gra1: hsl(220, 10%, 50%);
+	--Lth_gra2: hsl(220, 10%, 60%);
+	--Lth_gra3: hsl(220, 10%, 70%);
+	--Lth_gra4: hsl(220, 10%, 80%);
+
+	--Lth_pur1: hsl(271, 10%, 50%);
+	--Lth_pur2: hsl(271, 10%, 60%);
+	--Lth_pur3: hsl(271, 10%, 70%);
+	--Lth_pur4: hsl(271, 10%, 80%);
+
+	--Lth_pin1: hsl(330, 10%, 50%);
+	--Lth_pin2: hsl(330, 10%, 60%);
+	--Lth_pin3: hsl(330, 10%, 70%);
+	--Lth_pin4: hsl(330, 10%, 80%);
+
+	--Lth_blu1: hsl(217, 10%, 50%);
+	--Lth_blu2: hsl(217, 10%, 60%);
+	--Lth_blu3: hsl(217, 10%, 70%);
+	--Lth_blu4: hsl(217, 10%, 80%);
+
+	--Lth_gre1: hsl(142, 10%, 50%);
+	--Lth_gre2: hsl(142, 10%, 60%);
+	--Lth_gre3: hsl(142, 10%, 70%);
+	--Lth_gre4: hsl(142, 10%, 80%);
+
+	--Lth_yel1: hsl(45,  10%, 50%);
+	--Lth_yel2: hsl(45,  10%, 60%);
+	--Lth_yel3: hsl(45,  10%, 70%);
+	--Lth_yel4: hsl(45,  10%, 80%);
 
 	--LTheme1: var(--Lth_gra1);
 	--LTheme2: var(--Lth_gra2);
@@ -90,19 +100,19 @@
 	--LTheme4: var(--Lth_gra4);
 
 
-	--gra: hsl(220, 9%, 46%);
-	--pur: hsl(271, 91%, 65%);
-	--pin: hsl(330, 81%, 60%);
-	--blu: hsl(217, 91%, 60%);
-	--gre: hsl(142, 71%, 45%);
-	--yel: hsl(45, 93%, 47%);
+	--gra: hsl(204, 3%, 70%);
+	--pur: hsl(271, 60%, 70%);
+	--pin: hsl(330, 60%, 70%);
+	--blu: hsl(217, 60%, 70%);
+	--gre: hsl(142, 60%, 70%);
+	--yel: hsl(45,  60%, 70%);
 
-	--bor_gra: rgb(3 7 18);
-	--bor_pur: rgb(59 7 100);
-	--bor_pin: rgb(80 7 36);
-	--bor_blu: rgb(23 37 84);
-	--bor_gre: rgb(5 46 22);
-	--bor_yel: rgb(66 32 6);
+	--bor_gra: hsl(229, 14%, 22%);
+	--bor_pur: hsl(274, 60%, 20%);
+	--bor_pin: hsl(336, 60%, 20%);
+	--bor_blu: hsl(217, 60%, 20%);
+	--bor_gre: hsl(145, 60%, 20%);
+	--bor_yel: hsl(26,  60%, 20%);
 
 	--HeaderHeight: 3.5rem;
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight));
