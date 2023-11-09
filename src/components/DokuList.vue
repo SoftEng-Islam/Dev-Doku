@@ -21,7 +21,7 @@ div(class="absolute duration-100 h-[var(--DokuListsHeight)] bg-[var(--LTheme3)] 
 				li(class="relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer ")
 				li(class="relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer ")
 		button(type="button" @click="close" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] absolute z-20 top-1/2 right-[-1rem] translate-y-[-50%]")
-			<i v-show="ri_arrow_left" class="ri-arrow-left-s-line text-white"></i>
-			<i v-show="ri_arrow_right" class="ri-arrow-right-s-line text-white"></i>
+			<i v-show="ri_arrow_left" class="ri-arrow-left-s-line dark:text-white"></i>
+			<i v-show="ri_arrow_right" class="ri-arrow-right-s-line dark:text-white"></i>
 	<doku-pages/>
 </template>
