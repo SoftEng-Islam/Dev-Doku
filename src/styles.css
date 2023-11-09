@@ -26,6 +26,7 @@
 }
 
 :root {
+	/* Dark Theme */
 	--th_gra1: hsl(220, 81%, 8%);
 	--th_gra2: hsl(220, 50%, 10%);
 	--th_gra3: hsl(220, 60%, 12%);
