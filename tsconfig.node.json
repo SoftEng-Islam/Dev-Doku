@@ -2,7 +2,7 @@
   "compilerOptions": {
     "composite": true,
     "skipLibCheck": true,
-    "module": "NodeNext",
+    "module": "ES2015",
     "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
 	"forceConsistentCasingInFileNames": true,
