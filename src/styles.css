@@ -26,6 +26,16 @@
 }
 
 :root {
+
+	/* Base Colors */
+	--gra: hsl(204, 3%, 70%);
+	--pur: hsl(271, 60%, 70%);
+	--pin: hsl(330, 60%, 70%);
+	--blu: hsl(217, 60%, 70%);
+	--gre: hsl(142, 60%, 70%);
+	--yel: hsl(45,  60%, 70%);
+
+
 	/* Dark Theme */
 	--th_gra1: hsl(225, 10%, 05%);
 	--th_gra2: hsl(220, 10%, 10%);
@@ -99,13 +109,6 @@
 	--LTheme3: var(--Lth_gra3);
 	--LTheme4: var(--Lth_gra4);
 
-
-	--gra: hsl(204, 3%, 70%);
-	--pur: hsl(271, 60%, 70%);
-	--pin: hsl(330, 60%, 70%);
-	--blu: hsl(217, 60%, 70%);
-	--gre: hsl(142, 60%, 70%);
-	--yel: hsl(45,  60%, 70%);
 
 	--bor_gra: hsl(229, 14%, 22%);
 	--bor_pur: hsl(274, 60%, 20%);
