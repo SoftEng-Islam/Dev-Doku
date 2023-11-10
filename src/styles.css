@@ -36,6 +36,15 @@
 	--yel: hsl(45,  60%, 70%);
 
 
+	/* Borders */
+	--bor_gra: hsl(229, 14%, 22%);
+	--bor_pur: hsl(274, 60%, 20%);
+	--bor_pin: hsl(336, 60%, 20%);
+	--bor_blu: hsl(217, 60%, 20%);
+	--bor_gre: hsl(145, 60%, 20%);
+	--bor_yel: hsl(26,  60%, 20%);
+
+
 	/* Dark Theme */
 	--th_gra1: hsl(225, 10%, 05%);
 	--th_gra2: hsl(220, 10%, 10%);
@@ -110,18 +119,15 @@
 	--LTheme4: var(--Lth_gra4);
 
 
-	--bor_gra: hsl(229, 14%, 22%);
-	--bor_pur: hsl(274, 60%, 20%);
-	--bor_pin: hsl(336, 60%, 20%);
-	--bor_blu: hsl(217, 60%, 20%);
-	--bor_gre: hsl(145, 60%, 20%);
-	--bor_yel: hsl(26,  60%, 20%);
-
 	--HeaderHeight: 3.5rem;
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight));
 
+	/* Dark Border */
 	--borderFavColor: var(--bor_gra);
+	/* Light Border */
 	--LborderFavColor: var(--gra);
+
+	/* Main Color */
 	--favColor: var(--gra);
 }
 
