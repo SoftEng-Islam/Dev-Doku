@@ -119,7 +119,10 @@
 	--LTheme4: var(--Lth_gra4);
 
 
+	/* Header Height */
 	--HeaderHeight: 3.5rem;
+
+	/* LeftSides Height */
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight));
 
 	/* Dark Border */
