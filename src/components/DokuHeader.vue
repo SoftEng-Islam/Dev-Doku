@@ -28,9 +28,11 @@ function MT_toggleMode() {
 	}
 };
 
+let LiColorActive = ref<number>(1);
 
 let rootElement = document.querySelector(":root") as HTMLElement;
 function setColorTheme(color: number): void {
+	LiColorActive.value = color;
 	switch(color) {
 	case 1:
 		rootElement.style.setProperty("--favColor", '--gra');
@@ -129,25 +131,29 @@ function setColorTheme(color: number): void {
 //- Our Header
 header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex items-center px-4 bg-[var(--LTheme1)] dark:bg-[var(--Theme1)]" data-tauri-drag-region style="user-select: none;")
 	//- App Name or The Logo
-	h1(class="text-black dark:text-white font-bold") Dev-Doku
+	h1(class="text-black dark:text-white font-bold mr-auto") Dev-Doku
 
+
+	//- Settings
+	button(type="button", class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
+		<i class="ri-settings-2-line ri-lg text-black dark:text-white animate__animated animate__heartBeat animate__infinite"></i>
+	//- Change App Colors and Theme
+	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--Theme3)]")
+		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 	bg-[var(--gra)]")
+		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 	bg-[var(--pur)]")
+		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--pin)]")
+		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--blu)]")
+		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--gre)]")
+		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--yel)]")
 
 	//- Dark / Light Button
-	div(class="toggleMode ml-auto h-7 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
+	div(class="toggleMode h-7 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
 		input(type="checkbox" :checked="darkModeChecked")
 		label(for="darkmode-toggle")
 			<svg viewBox="0 0 24 24" class="sun pl-[3px]" xmlns="http://www.w3.org/2000/svg"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"/></svg>
 			<svg viewBox="0 0 24 24" class="moon pb-[2px]" xmlns="http://www.w3.org/2000/svg"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z"/></svg>
 
-	//- Change App Colors and Theme
-	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--Theme3)]")
-		button(type="button", @click="setColorTheme(1)" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 	bg-gray-500")
-		button(type="button", @click="setColorTheme(2)" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 	bg-purple-500")
-		button(type="button", @click="setColorTheme(3)" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150		bg-pink-500")
-		button(type="button", @click="setColorTheme(4)" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150		bg-blue-500")
-		button(type="button", @click="setColorTheme(5)" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-green-500")
-		button(type="button", @click="setColorTheme(6)" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-yellow-500")
-	//- Settings
+
 	//- titlebar buttons
 	div(class="flex items-center justify-center gap-2 ml-4")
 		button(type="button" @click="minimize" class="w-6 h-6 rounded-md cursor-pointer hover:opacity-50 bg-yellow-500")
@@ -164,15 +170,15 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		@apply w-0 h-0;
 		visibility: hidden;
 		&:checked + label {
-			@apply bg-[var(--dark100)];
+			@apply bg-[var(--Theme4)];
 		}
 		&:checked + label:after {
 			@apply left-full;
 			transform: translateX(-100%);
-			background: linear-gradient(180deg,#777,#000000);
+			background: linear-gradient(180deg,#868686,#8D5EB9);
 		}
 		&:checked + label svg.sun {
-			@apply fill-[#7e7e7e]
+			@apply fill-gray-400
 		}
 		&:checked + label svg.moon {
 			@apply fill-white;
@@ -194,7 +200,7 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 			@apply left-0 fill-white duration-300;
 		}
 		& svg.moon {
-			@apply  right-0 fill-[#7e7e7e] duration-300;
+			@apply  right-0 fill-gray-400 duration-300;
 		}
 		&:active:after{
 			@apply w-10;
