@@ -15,11 +15,6 @@ import VueTippy from 'vue-tippy';
 import 'tippy.js/dist/tippy.css'; // optional for styling
 
 
-
-
-// const editor = new SimpleAffineEditor();
-// document.body.appendChild(editor);
-
 // mount App
 createApp(App)
 .use(createPinia())
