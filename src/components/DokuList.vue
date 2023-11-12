@@ -17,11 +17,18 @@ div(class="absolute duration-100 h-[var(--DokuListsHeight)] bg-[var(--LTheme3)] 
 		div()
 			input(type="text", placeholder="Search..." value="" , class="w-full h-8 px-2 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] text-black dark:text-white placeholder:text-black dark:placeholder:text-white" )
 		div(class="")
-			ul(class="w-full flex p-5 flex-col justify-center gap-y-4")
+			ul(class="DokuList_Ul w-full flex p-5 flex-col justify-center gap-y-4")
 				li(class="relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer ")
+					span(class=" left-0 top-0 h-full w-3 rounded-md bg-[var(--LTheme2)] dark:bg-[var(--Theme4)]")
 				li(class="relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer ")
 		button(type="button" @click="close" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] absolute z-20 top-1/2 right-[-1rem] translate-y-[-50%]")
 			<i v-show="ri_arrow_left" class="ri-arrow-left-s-line dark:text-white"></i>
 			<i v-show="ri_arrow_right" class="ri-arrow-right-s-line dark:text-white"></i>
 	<doku-pages/>
 </template>
+<style scoped lang="sass">
+.DokuList_Ul
+	& > li
+		& > span
+			@apply absolute
+</style>
