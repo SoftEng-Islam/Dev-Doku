@@ -19,7 +19,8 @@
     "remixicon": "^3.5.0",
     "vue": "^3.3.4",
     "vue-tippy": "^6.3.1",
-    "vue3-perfect-scrollbar": "^1.6.1"
+    "vue3-perfect-scrollbar": "^1.6.1",
+    "vue3-popper": "^1.5.0"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
