@@ -1,7 +1,17 @@
 <script setup lang="ts">
 	import { ref } from 'vue';
 	import DokuPages from "./DokuPages.vue";
-	import Popper from "vue3-popper";
+
+	import { useTippy } from 'vue-tippy'
+	const btn = ref()
+
+	useTippy(btn, {
+		content: 'Active Now!',
+		trigger: 'click',
+
+	})
+
+
 	// Our List
 	let activeIndex =  ref<null | number>(null);
 	const items = ref(['Islam', 'Ahmed', 'Mohamed']);
@@ -25,8 +35,7 @@ div(class="absolute duration-100 h-[var(--DokuListsHeight)] bg-[var(--LTheme3)] 
 		div(class="")
 			ul(class="DokuList_Ul w-full flex p-5 flex-col justify-center gap-y-4")
 				li(v-for="(item, index) in items" :key="index" :class="{ 'active': index === activeIndex }" @click="activeIndex = index")
-					Popper(content="Active Now")
-						button(class="pop-btn")
+					button(class="pop-btn" ref="btn")
 					| {{ item }}
 		button(type="button" @click="close" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] absolute z-20 top-1/2 right-[-1rem] translate-y-[-50%]")
 			<i v-show="ri_arrow_left" class="ri-arrow-left-s-line dark:text-white"></i>
