@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import vuePugPlugin from "vue-pug-plugin"
-import pugPlugin from "vite-plugin-pug"
+import vuePugPlugin from "vue-pug-plugin";
+import pugPlugin from "vite-plugin-pug";
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
