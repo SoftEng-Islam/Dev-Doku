@@ -35,60 +35,64 @@ function setColorTheme(color: number): void {
 	LiColorActive.value = color;
 	switch(color) {
 	case 1:
-		rootElement.style.setProperty("--favColor", '--gra');
+		rootElement.style.setProperty("--dark-fav-color", 'var(--D-gra)');
+		rootElement.style.setProperty("--light-fav-color", 'var(--L-gra)');
 		// Dark
-		rootElement.style.setProperty("--borderFavColor", 'var(--bor_gra)');
+		rootElement.style.setProperty("--borderFavColor", 'var(--D-gra)');
 		rootElement.style.setProperty("--Theme1", 'var(--th_gra1)');
 		rootElement.style.setProperty("--Theme2", 'var(--th_gra2)');
 		rootElement.style.setProperty("--Theme3", 'var(--th_gra3)');
 		rootElement.style.setProperty("--Theme4", 'var(--th_gra4)');
 		// Light
-		rootElement.style.setProperty("--LborderFavColor", 'var(--gra)');
+		rootElement.style.setProperty("--LborderFavColor", 'var(--L-gra)');
 		rootElement.style.setProperty("--LTheme1", 'var(--Lth_gra1)');
 		rootElement.style.setProperty("--LTheme2", 'var(--Lth_gra2)');
 		rootElement.style.setProperty("--LTheme3", 'var(--Lth_gra3)');
 		rootElement.style.setProperty("--LTheme4", 'var(--Lth_gra4)');
 		break;
 	case 2:
-		rootElement.style.setProperty("--favColor", '--pur');
+		rootElement.style.setProperty("--dark-fav-color", 'var(--D-pur)');
+		rootElement.style.setProperty("--light-fav-color", 'var(--L-pur)');
 		// Dark
-		rootElement.style.setProperty("--borderFavColor", 'var(--bor_pur)');
+		rootElement.style.setProperty("--borderFavColor", 'var(--D-pur)');
 		rootElement.style.setProperty("--Theme1", 'var(--th_pur1)');
 		rootElement.style.setProperty("--Theme2", 'var(--th_pur2)');
 		rootElement.style.setProperty("--Theme3", 'var(--th_pur3)');
 		rootElement.style.setProperty("--Theme4", 'var(--th_pur4)');
 		// Light
-		rootElement.style.setProperty("--LborderFavColor", 'var(--pur)');
+		rootElement.style.setProperty("--LborderFavColor", 'var(--L-pur)');
 		rootElement.style.setProperty("--LTheme1", 'var(--Lth_pur1)');
 		rootElement.style.setProperty("--LTheme2", 'var(--Lth_pur2)');
 		rootElement.style.setProperty("--LTheme3", 'var(--Lth_pur3)');
 		rootElement.style.setProperty("--LTheme4", 'var(--Lth_pur4)');
 		break;
 	case 3:
-		rootElement.style.setProperty("--favColor", '--pin');
+		rootElement.style.setProperty("--dark-fav-color", 'var(--D-pin)');
+		rootElement.style.setProperty("--light-fav-color", 'var(--L-pin)');
 		// Dark
-		rootElement.style.setProperty("--borderFavColor", 'var(--bor_pin)');
+		rootElement.style.setProperty("--borderFavColor", 'var(--D-pin)');
 		rootElement.style.setProperty("--Theme1", 'var(--th_pin1)');
 		rootElement.style.setProperty("--Theme2", 'var(--th_pin2)');
 		rootElement.style.setProperty("--Theme3", 'var(--th_pin3)');
 		rootElement.style.setProperty("--Theme4", 'var(--th_pin4)');
 		// Light
-		rootElement.style.setProperty("--LborderFavColor", 'var(--pin)');
+		rootElement.style.setProperty("--LborderFavColor", 'var(--L-pin)');
 		rootElement.style.setProperty("--LTheme1", 'var(--Lth_pin1)');
 		rootElement.style.setProperty("--LTheme2", 'var(--Lth_pin2)');
 		rootElement.style.setProperty("--LTheme3", 'var(--Lth_pin3)');
 		rootElement.style.setProperty("--LTheme4", 'var(--Lth_pin4)');
 		break;
 	case 4:
-		rootElement.style.setProperty("--favColor", '--blu');
+		rootElement.style.setProperty("--dark-fav-color", 'var(--D-blu)');
+		rootElement.style.setProperty("--light-fav-color", 'var(--L-blu)');
 		// Dark
-		rootElement.style.setProperty("--borderFavColor", 'var(--bor_blu)');
+		rootElement.style.setProperty("--borderFavColor", 'var(--D-blu)');
 		rootElement.style.setProperty("--Theme1", 'var(--th_blu1)');
 		rootElement.style.setProperty("--Theme2", 'var(--th_blu2)');
 		rootElement.style.setProperty("--Theme3", 'var(--th_blu3)');
 		rootElement.style.setProperty("--Theme4", 'var(--th_blu4)');
 		// Light
-		rootElement.style.setProperty("--LborderFavColor", 'var(--blu)');
+		rootElement.style.setProperty("--LborderFavColor", 'var(--L-blu)');
 		rootElement.style.setProperty("--LTheme1", 'var(--Lth_blu1)');
 		rootElement.style.setProperty("--LTheme2", 'var(--Lth_blu2)');
 		rootElement.style.setProperty("--LTheme3", 'var(--Lth_blu3)');
@@ -96,30 +100,32 @@ function setColorTheme(color: number): void {
 
 		break;
 	case 5:
-		rootElement.style.setProperty("--favColor", '--gre');
+		rootElement.style.setProperty("--dark-fav-color", 'var(--D-gre)');
+		rootElement.style.setProperty("--light-fav-color", 'var(--L-gre)');
 		// Dark
-		rootElement.style.setProperty("--borderFavColor", 'var(--bor_gre)');
+		rootElement.style.setProperty("--borderFavColor", 'var(--D-gre)');
 		rootElement.style.setProperty("--Theme1", 'var(--th_gre1)');
 		rootElement.style.setProperty("--Theme2", 'var(--th_gre2)');
 		rootElement.style.setProperty("--Theme3", 'var(--th_gre3)');
 		rootElement.style.setProperty("--Theme4", 'var(--th_gre4)');
 		// Light
-		rootElement.style.setProperty("--LborderFavColor", 'var(--gre)');
+		rootElement.style.setProperty("--LborderFavColor", 'var(--L-gre)');
 		rootElement.style.setProperty("--LTheme1", 'var(--Lth_gre1)');
 		rootElement.style.setProperty("--LTheme2", 'var(--Lth_gre2)');
 		rootElement.style.setProperty("--LTheme3", 'var(--Lth_gre3)');
 		rootElement.style.setProperty("--LTheme4", 'var(--Lth_gre4)');
 		break;
 	case 6:
-		rootElement.style.setProperty("--favColor", '--yel');
+		rootElement.style.setProperty("--dark-fav-color", 'var(--D-yel)');
+		rootElement.style.setProperty("--light-fav-color", 'var(--L-yel)');
 		// Dark
-		rootElement.style.setProperty("--borderFavColor", 'var(--bor_yel)');
+		rootElement.style.setProperty("--borderFavColor", 'var(--D-yel)');
 		rootElement.style.setProperty("--Theme1", 'var(--th_yel1)');
 		rootElement.style.setProperty("--Theme2", 'var(--th_yel2)');
 		rootElement.style.setProperty("--Theme3", 'var(--th_yel3)');
 		rootElement.style.setProperty("--Theme4", 'var(--th_yel4)');
 		// Light
-		rootElement.style.setProperty("--LborderFavColor", 'var(--yel)');
+		rootElement.style.setProperty("--LborderFavColor", 'var(--L-yel)');
 		rootElement.style.setProperty("--LTheme1", 'var(--Lth_yel1)');
 		rootElement.style.setProperty("--LTheme2", 'var(--Lth_yel2)');
 		rootElement.style.setProperty("--LTheme3", 'var(--Lth_yel3)');
@@ -139,12 +145,12 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		<i class="ri-settings-2-line ri-lg text-black dark:text-white animate__animated animate__heartBeat animate__infinite"></i>
 	//- Change App Colors and Theme
 	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--Theme3)]")
-		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L_gra)]")
-		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L_pur)]")
-		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L_pin)]")
-		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L_blu)]")
-		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L_gre)]")
-		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L_yel)]")
+		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-gra)]")
+		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-pur)]")
+		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-pin)]")
+		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-blu)]")
+		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-gre)]")
+		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-yel)]")
 
 	//- Dark / Light Button
 	div(class="toggleMode h-7 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")

@@ -28,22 +28,20 @@
 :root {
 
 	/* Light Colors */
-	--L_gra: hsl(204, 3%, 70%);
-	--L_pur: hsl(271, 60%, 70%);
-	--L_pin: hsl(330, 60%, 70%);
-	--L_blu: hsl(217, 60%, 70%);
-	--L_gre: hsl(142, 60%, 70%);
-	--L_yel: hsl(45,  60%, 70%);
-
+	--L-gra: hsl(0, 0%, 90%);
+	--L-pur: hsl(271, 60%, 70%);
+	--L-pin: hsl(330, 60%, 70%);
+	--L-blu: hsl(217, 60%, 70%);
+	--L-gre: hsl(142, 60%, 70%);
+	--L-yel: hsl(45,  60%, 70%);
 
 	/* Dark Colors */
-	--D_gra: hsl(229, 14%, 22%);
-	--D_pur: hsl(274, 60%, 20%);
-	--D_pin: hsl(336, 60%, 20%);
-	--D_blu: hsl(217, 60%, 20%);
-	--D_gre: hsl(145, 60%, 20%);
-	--D_yel: hsl(26,  60%, 20%);
-
+	--D-gra: hsl(229, 14%, 22%);
+	--D-pur: hsl(274, 60%, 20%);
+	--D-pin: hsl(336, 60%, 20%);
+	--D-blu: hsl(217, 60%, 20%);
+	--D-gre: hsl(145, 60%, 20%);
+	--D-yel: hsl(26,  60%, 20%);
 
 	/* Dark Theme */
 	--th_gra1: hsl(225, 10%, 05%);
@@ -118,7 +116,6 @@
 	--LTheme3: var(--Lth_gra3);
 	--LTheme4: var(--Lth_gra4);
 
-
 	/* Header Height */
 	--HeaderHeight: 3.5rem;
 
@@ -126,12 +123,13 @@
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight));
 
 	/* Dark Border */
-	--borderFavColor: var(--D_gra);
+	--borderFavColor: var(--D-gra);
 	/* Light Border */
-	--LborderFavColor: var(--L_gra);
+	--LborderFavColor: var(--L-gra);
 
 	/* Main Color */
-	--favColor: var(--L_gra);
+	--light-fav-color: var(--L-gra);
+	--dark-fav-color: var(--D-gra);
 }
 
 body {

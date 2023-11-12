@@ -25,6 +25,7 @@ div(class="absolute duration-100 h-[var(--DokuListsHeight)] bg-[var(--LTheme3)] 
 		div(class="")
 			ul(class="DokuList_Ul w-full flex p-5 flex-col justify-center gap-y-4")
 				li(v-for="(item, index) in items" :key="index" :class="{ 'active': index === activeIndex }" @click="activeIndex = index") {{ item }}
+					span
 		button(type="button" @click="close" class="w-4 h-11 rounded-tr-lg rounded-br-lg bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] absolute z-20 top-1/2 right-[-1rem] translate-y-[-50%]")
 			<i v-show="ri_arrow_left" class="ri-arrow-left-s-line dark:text-white"></i>
 			<i v-show="ri_arrow_right" class="ri-arrow-right-s-line dark:text-white"></i>
@@ -34,8 +35,10 @@ div(class="absolute duration-100 h-[var(--DokuListsHeight)] bg-[var(--LTheme3)] 
 .DokuList_Ul
 	& > li
 		&.active
-			@apply bg-[var(--favColor)]
-		@apply text-white relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer
+			@apply bg-[var(--light-fav-color)] dark:bg-[var(--dark-fav-color)] font-bold
+		@apply text-black dark:text-white pl-4 flex items-center relative w-full h-7 rounded-md bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] cursor-pointer
 		& > span
 			@apply absolute left-0 top-0 h-full w-3 rounded-md bg-[var(--LTheme2)] dark:bg-[var(--Theme4)]
+		&.active > span
+			@apply bg-black dark:bg-white
 </style>
